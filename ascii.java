@@ -1,5 +1,3 @@
-package Day5July2022;
-
 public class ascii {
     public static void main(String[] args) {
         int num = 0;

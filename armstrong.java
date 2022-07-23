@@ -1,4 +1,4 @@
-package Day5July2022;
+
 
 class armstrong{
     public static void main(String[] args) {
