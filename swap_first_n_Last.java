@@ -1,14 +1,23 @@
 public class swap_first_n_Last {
     public static void main(String[] args) {
-        int num = 2333945,rem = 0;
-        int temp = 0;
-        temp = num % 10;
-        int lastval=  temp;
+        int num = 234768975,temp = num,temp2=temp,count = 0;
+
+        int lastDIg = num%10;
+
         while (num>0) {
-            rem = num%10;
             num = num/10;
+            count++;
         }
-        System.out.println(lastval);
+
+        int firstDig = temp / (int)Math.pow(10, count-1);
+        
+        int midDig = temp2 % (int)Math.pow(10, count-1);
+        int swap = lastDIg;
+        swap = swap * (int)Math.pow(10, count-1);
+        swap = swap+midDig;  
+        swap = swap-lastDIg;    
+        swap = swap + firstDig;
+        System.out.println(swap);
+        
     }
 }
-//pending
