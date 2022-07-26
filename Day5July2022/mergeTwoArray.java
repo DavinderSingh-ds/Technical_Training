@@ -6,7 +6,7 @@ public class mergeTwoArray {
         int index = 0;
 
         for (int i = 0; i < a.length ; i++) {
-            c[i] = a[i];
+            c[i] = a[i];     // c[index] = a[i];
             index++;
         }
   
